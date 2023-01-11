@@ -1,0 +1,20 @@
+.Header{
+    height: 80px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+    
+}
+
+.Header a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.Header a:hover{
+    background-color: brown;
+}
