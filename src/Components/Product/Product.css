@@ -26,3 +26,6 @@ height: 280px;
     background-color: rgb(246, 220, 170);
     border-radius: 5px;
 }
+.add-btn:hover{
+background-color: rgb(244, 166, 22);
+}
