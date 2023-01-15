@@ -12,7 +12,8 @@
 .Header a{
     margin-left: 40px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(245, 70, 35);
+    font-weight: 600;
     
 }
 .Header a:hover{

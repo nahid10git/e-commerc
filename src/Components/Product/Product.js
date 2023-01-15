@@ -10,7 +10,7 @@ const Product = (props) => {
            <img src={img} alt=''/>
            <div className='product_description'>
             <h5>Product Name: ={name}</h5>
-            <h3>Price: = {price}</h3>
+            <h3>Price:{price}$</h3>
             <h3>ratings: = {ratings}</h3>
             <button onClick={()=>props.addToCartHandler(props.product)} className='add-btn'>Add to cart</button>
            </div>

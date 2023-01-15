@@ -25,6 +25,7 @@ height: 280px;
 .add-btn{
     background-color: rgb(246, 220, 170);
     border-radius: 5px;
+    bottom: 0;
 }
 .add-btn:hover{
 background-color: rgb(244, 166, 22);

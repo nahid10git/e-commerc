@@ -7,3 +7,6 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 5px;
 }
+.cart-container{
+    background-color: rgb(230, 120, 52);
+}
