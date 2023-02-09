@@ -1,9 +1,11 @@
 import React from 'react';
+
 import './Product.css'
 
 const Product = (props) => {
     const {name, img, ratings, price, seller} = props.product;
     const {addToCartHandler} = props;
+    
     
     return (
         <div className='product'>
