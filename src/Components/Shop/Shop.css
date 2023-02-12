@@ -10,3 +10,9 @@
 .cart-container{
     background-color: rgb(230, 120, 52);
 }
+@media screen and(max-weidth:1100px){
+    .products-container{
+        grid-template-columns: repeat(2, 1rf);
+    }
+    
+}

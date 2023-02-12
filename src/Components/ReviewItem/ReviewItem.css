@@ -1,0 +1,30 @@
+.reviewItem-product{
+    display: flex;
+    margin: 21px auto;
+    border: 1px solid rgb(70, 68, 71);
+    width: 517px;
+    padding: 8px;
+
+
+}
+.reviewItem-product img{
+    width: 92px;
+    height: 92px;
+}
+.reviewItem-details {
+    display: flex;
+    margin-left: 17px;
+    width: 100%;
+    justify-content: space-between;  
+    
+}
+.reviewItem-details p {
+    margin: 0;
+}
+.delete-btn{
+    border: 0;
+    background-color: rgb(238, 12, 12);
+    height: 30px;
+    border-radius: 50%;
+    cursor:pointer;
+}
