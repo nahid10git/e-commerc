@@ -2,6 +2,7 @@
     display: flex;
     margin: 21px auto;
     border: 1px solid rgb(70, 68, 71);
+    border-radius: 20px;
     width: 517px;
     padding: 8px;
 
@@ -27,4 +28,9 @@
     height: 30px;
     border-radius: 50%;
     cursor:pointer;
+}
+.delete-container{
+
+    display: flex;
+    align-items: center;
 }

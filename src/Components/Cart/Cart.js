@@ -1,9 +1,9 @@
-import React from 'react';
+
 
 import './Cart.css'
 
 const Cart = (props) => {
-    const {cart}= props;
+    const {cart, deleteCart,children }= props;
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -23,6 +23,15 @@ const Cart = (props) => {
              <p> Shipping: ${shipping}</p>
              <p>Tax: ${tax} </p>
              <p>Grand Total: ${grandTotal} </p>
+             <div className='Delete-Cart'>
+                <button onClick={deleteCart}>Delete Cart!</button>
+       
+             {children}
+            
+               
+                
+                
+             </div>
         </div>
     );
 };
