@@ -28,6 +28,8 @@
     height: 30px;
     border-radius: 50%;
     cursor:pointer;
+    color: white;
+    font-weight: 700;
 }
 .delete-container{
 

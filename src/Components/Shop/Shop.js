@@ -7,6 +7,9 @@ import './Shop.css';
 
 const Shop = () => {
     const products = useLoaderData();
+    
+    
+
   
     useEffect(()=>{
       const stroedCart = getStoredCart()
@@ -21,6 +24,9 @@ const Shop = () => {
       }
       setCart(savedCart);
     },[products])
+
+
+
     const [cart, setCart] = useState([])
     const deleteCart =()=>{
         setCart([])
@@ -44,12 +50,40 @@ const Shop = () => {
       addToDb(selectedProduct.id)
     
   }
+  const [userProduct, setUserProduct]=useState([]);
+
+  useEffect(()=>{
+    fetch('products.json')
+    .then(res=>res.json())
+    .then(data=>setUserProduct(data))
+
+  },[])
+  
+
+
+
+
+  const handleSearchFild=e=>{
+    const searchText= e.target.value;
+    const matchedProduct = products.filter(product=>product.name.toLowerCase().includes(searchText.toLowerCase()))
+    setUserProduct(matchedProduct);
+  }
 
     return (
+      <div>
+        <div className='search-container'>
+
+        <input type='text' 
+        placeholder='Search'
+        onChange={handleSearchFild}
+        
+        ></input>
+
+        </div>
         <div className='shop-container'>
           <div className='products-container'>
             {
-              products.map(product => <Product
+            userProduct.map(product => <Product
               key={product.id}
               product={product}
               addToCartHandler={addToCartHandler}
@@ -66,6 +100,7 @@ const Shop = () => {
             </Link>
            </Cart>
           </div>
+        </div>
         </div>
     );
 };

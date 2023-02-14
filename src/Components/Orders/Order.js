@@ -39,7 +39,7 @@ const Order = () => {
 
                 ></ReviewItem>)
             }
-            {cart.length===0 && <h3>Plase Buy SomeThing <Link to='/'>Back To Home..</Link></h3>}
+            {cart.length===0 && <h3>Please Buy SomeThing <Link to='/'>Back To Home..</Link></h3>}
 
             </div>
             <div className='cart-container'>

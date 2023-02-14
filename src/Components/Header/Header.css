@@ -1,6 +1,6 @@
 .Header{
     height: 80px;
-    background-color: blueviolet;
+    background-color: rgb(179, 142, 119);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,10 +12,11 @@
 .Header a{
     margin-left: 40px;
     text-decoration: none;
-    color: rgb(245, 70, 35);
-    font-weight: 600;
+    color: rgb(246, 241, 240);
+    font-weight: 800;
     
 }
 .Header a:hover{
     background-color: brown;
+    
 }
