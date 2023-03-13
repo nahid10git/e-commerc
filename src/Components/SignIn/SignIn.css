@@ -1,0 +1,44 @@
+.form-container{
+    width: 400px;
+    height: 450px;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+
+}
+.form-container h2{
+    text-align: center;
+    font-size: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.form-container label{
+    display: block;
+   
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form-container input{
+   
+    line-height: 1.5rem;
+    width: 400px;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+.btn-submit{
+    background: rgba(241, 170, 3, 0.3);
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    
+}
+.btn-submit:hover{
+    background-color: rgba(241, 170, 3, 0.8);
+}
+.error{
+    color: #f41a1a;
+}

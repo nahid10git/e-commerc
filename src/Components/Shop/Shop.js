@@ -50,6 +50,9 @@ const Shop = () => {
       addToDb(selectedProduct.id)
     
   }
+
+
+  
   const [userProduct, setUserProduct]=useState([]);
 
   useEffect(()=>{
@@ -63,10 +66,11 @@ const Shop = () => {
 
 
 
-  const handleSearchFild=e=>{
+  const handleSearchFild = e => {
     const searchText= e.target.value;
     const matchedProduct = products.filter(product=>product.name.toLowerCase().includes(searchText.toLowerCase()))
     setUserProduct(matchedProduct);
+    // console.log(matchedProduct.length)
   }
 
     return (
